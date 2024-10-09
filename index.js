@@ -3,7 +3,8 @@ const path = require('path');
 
 module.exports = (dirPath, args) => {
     const absoluteDirPath = path.resolve(dirPath);
-    fs.readdirSync(absoluteDirPath, (err, files) => {
+    
+    fs.readdir(absoluteDirPath, (err, files) => {
         if (err) return console.error(`Erreur lors de la lecture du dossier: ${err}`);
         files.forEach(file => {
             const modulePath = path.join(absoluteDirPath, file);
