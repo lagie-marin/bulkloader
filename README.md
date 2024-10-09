@@ -2,7 +2,7 @@
 Le module `bulkloader` permet de charger dynamiquement tous les modules d'un répertoire donné et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.
 ### Déclaration
 ```javascript
-const bulkloader = require('bulkloader');
+const bulkloader = require("@mlagie/bulkloader");
 ```
 ### Fonctionnalité
 La fonction exportée par le module `bulkloader` prend deux paramètres :
@@ -22,7 +22,7 @@ project/
 ```
 #### Exemple de code dans index.js
 ```javascript
-const bulkloader = require("@mlagie/bulkloader");;
+const bulkloader = require("@mlagie/bulkloader");
 const client = require('client'); // Exemple de client
 const app = require('app'); // Exemple d'application
 
