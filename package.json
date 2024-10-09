@@ -1,0 +1,19 @@
+{
+  "name": "autorequire",
+  "version": "1.0.0",
+  "description": "Le module autoRequire permet de charger dynamiquement tous les modules d'un répertoire donné et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lagie-marin/autoRequire.git"
+  },
+  "author": "lagie-marin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lagie-marin/autoRequire/issues"
+  },
+  "homepage": "https://github.com/lagie-marin/autoRequire#readme"
+}
