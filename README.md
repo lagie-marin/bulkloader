@@ -22,7 +22,7 @@ project/
 ```
 #### Exemple de code dans index.js
 ```javascript
-const bulkloader = require('bulkloader');
+const bulkloader = require("@mlagie/bulkloader");;
 const client = require('client'); // Exemple de client
 const app = require('app'); // Exemple d'application
 
