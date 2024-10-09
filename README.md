@@ -1,5 +1,5 @@
 # Documentation du Module `bulkloader`
-Le module `bulkloader` permet de charger dynamiquement tous les modules d'un répertoire donné et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.
+Le module `bulkloader` permet de charger dynamiquement tous les modules d'un répertoire donné, y compris ceux dans les sous-répertoires, et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.
 
 # Installation
 ```bash
@@ -15,7 +15,7 @@ La fonction exportée par le module `bulkloader` prend deux paramètres :
 * `dirPath` : Le chemin vers le répertoire contenant les modules à charger.
 * `args` : Un tableau d'arguments à passer à chaque module chargé.
 ### Utilisation
-#### Exemple de structure de répertoire
+#### Exemple de structure de répertoire simple
 ```
 project/
 |
@@ -36,6 +36,29 @@ const app = require('app'); // Exemple d'application
 bulkloader('./modules', [client, app']);
 ```
 
+#### Exemple de structure de répertoire complexe
+```
+project/
+|
+├── modules/
+|   ├── submodules/
+|   |   ├──submodules1.js
+|   |   ├──submodules2.js
+│   ├── module1.js
+│   ├── module2.js
+│   └── module3.js
+│
+└── index.js
+```
+#### Exemple de code dans index.js
+```javascript
+const bulkloader = require("@mlagie/bulkloader");
+const client = require('client'); // Exemple de client
+const app = require('app'); // Exemple d'application
+
+// Charger tous les modules et les sous modules du répertoire 'modules' et leur passer les arguments
+bulkloader('./modules', [client, app'], true);
+```
 ### Gestion des erreurs
 Le module `bulkloader` inclut une gestion des erreurs pour :
 * La lecture du répertoire : Si une erreur se produit lors de la lecture du répertoire, un message d'erreur est affiché.
