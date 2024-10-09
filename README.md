@@ -1,5 +1,11 @@
 # Documentation du Module `bulkloader`
 Le module `bulkloader` permet de charger dynamiquement tous les modules d'un répertoire donné et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.
+
+# Installation
+```bash
+npm i @mlagie/bulkloader
+```
+
 ### Déclaration
 ```javascript
 const bulkloader = require("@mlagie/bulkloader");
