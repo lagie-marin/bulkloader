@@ -1,19 +1,20 @@
 {
-  "name": "bulkrequire",
+  "name": "@mlagie/bulkloader",
   "version": "1.0.0",
-  "description": "Le module bulkRequire permet de charger dynamiquement tous les modules d'un répertoire donné et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.",
+  "description": "Le module bulkloader permet de charger dynamiquement tous les modules d'un répertoire donné et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lagie-marin/bulkRequire.git"
+    "url": "git+https://github.com/lagie-marin/bulkloader.git"
   },
   "author": "lagie-marin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lagie-marin/bulkRequire/issues"
+    "url": "https://github.com/lagie-marin/bulkloader/issues"
   },
-  "homepage": "https://github.com/lagie-marin/bulkRequire#readme"
+  "homepage": "https://github.com/lagie-marin/bulkloader#readme",
+  "private": false
 }
