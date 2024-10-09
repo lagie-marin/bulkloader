@@ -4,6 +4,6 @@
  * @param dirPath - Le chemin vers le répertoire contenant les modules.
  * @param args - Les arguments à passer aux modules lors de leur appel.
  */
-declare function bulkLoader(dirPath: string, args: any[]): void;
+declare function bulkloader(dirPath: string, args: any[]): void;
 
-export = bulkLoader;
+export = bulkloader;
