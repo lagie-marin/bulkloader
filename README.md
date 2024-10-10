@@ -1,3 +1,7 @@
+# Bulkloader
+<img src="https://api.visitorbadge.io/api/VisitorHit?user=lagie-marin&repo=bulkloader-badge&countColor=%237B1E7A" height="20px"/> ![GitHub package.json version](https://img.shields.io/github/package-json/v/lagie-marin/bulkloader?color=#008000) ![NPM Downloads](https://img.shields.io/npm/d18m/%40mlagie%2Fbulkloader?color=#008000) ![NPM Downloads](https://img.shields.io/npm/dw/%40mlagie%2Fbulkloader?color=#008000) ![GitHub followers](https://img.shields.io/github/followers/lagie-marin?style=plastic&color=color%3D%23008000) ![GitHub repo size](https://img.shields.io/github/repo-size/lagie-marin/bulkloader?color=%green)
+ ![GitHub last commit](https://img.shields.io/github/last-commit/lagie-marin/bulkloader) ![GitHub forks](https://img.shields.io/github/forks/lagie-marin/bulkloader?style=plastic&color=%green)
+
 # Documentation du Module `bulkloader`
 Le module `bulkloader` permet de charger dynamiquement tous les modules d'un répertoire donné, y compris ceux dans les sous-répertoires, et de leur passer des arguments spécifiques. Cela est particulièrement utile pour initialiser plusieurs modules avec des configurations ou des dépendances communes.
 
