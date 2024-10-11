@@ -1,1 +1,1 @@
-![AUTHORS](https://img.shields.io/badge/AUTHORS:-gray?style=for-the-badge) ![https://github.com/lagie-marin](https://img.shields.io/badge/Marin%20Lagie-yellow?style=for-the-badge&logo=undertale&logoColor=E71D29)
+
