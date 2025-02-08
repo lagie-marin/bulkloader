@@ -39,7 +39,7 @@ const client = require('client'); // Exemple de client
 const app = require('app'); // Exemple d'application
 
 // Charger tous les modules du répertoire 'modules' et leur passer les arguments
-bulkloader('./modules', [client, app']);
+bulkloader('./modules', [client, app]);
 ```
 
 #### Exemple de structure de répertoire complexe
@@ -63,7 +63,7 @@ const client = require('client'); // Exemple de client
 const app = require('app'); // Exemple d'application
 
 // Charger tous les modules et les sous modules du répertoire 'modules' et leur passer les arguments
-bulkloader('./modules', [client, app'], true);
+bulkloader('./modules', [client, app], true);
 ```
 ### Gestion des erreurs
 Le module `bulkloader` inclut une gestion des erreurs pour :

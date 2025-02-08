@@ -16,5 +16,6 @@
     "url": "https://github.com/lagie-marin/bulkloader/issues"
   },
   "homepage": "https://github.com/lagie-marin/bulkloader#readme",
-  "private": false
+  "private": false,
+  "keywords": ["bulkloader", "bulk", "loader", "module", "module-loader"]
 }
