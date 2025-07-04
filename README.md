@@ -17,9 +17,12 @@ npm i @mlagie/bulkloader
 const bulkloader = require("@mlagie/bulkloader");
 ```
 ### Fonctionnalité
-La fonction exportée par le module `bulkloader` prend deux paramètres :
+La fonction exportée par le module `bulkloader` prend plusieurs paramètres :
 * `dirPath` : Le chemin vers le répertoire contenant les modules à charger.
 * `args` : Un tableau d'arguments à passer à chaque module chargé.
+* `recursive` *(optionnel)* : Booléen pour activer le chargement récursif des sous-répertoires (par défaut `false`).
+* `ignore` *(optionnel)* : Un tableau de noms de fichiers ou dossiers à ignorer lors du chargement.
+
 ### Utilisation
 #### Exemple de structure de répertoire simple
 ```
@@ -42,6 +45,7 @@ const app = require('app'); // Exemple d'application
 bulkloader('./modules', [client, app]);
 ```
 
+
 #### Exemple de structure de répertoire complexe
 ```
 project/
@@ -56,15 +60,19 @@ project/
 │
 └── index.js
 ```
-#### Exemple de code dans index.js
+
+#### Ignorer certains fichiers ou dossiers
+Vous pouvez ignorer certains fichiers ou dossiers en passant un tableau en 4ème argument :
+
 ```javascript
 const bulkloader = require("@mlagie/bulkloader");
-const client = require('client'); // Exemple de client
-const app = require('app'); // Exemple d'application
+const client = require('client');
+const app = require('app');
 
-// Charger tous les modules et les sous modules du répertoire 'modules' et leur passer les arguments
-bulkloader('./modules', [client, app], true);
+// Ignore le fichier 'module2.js' et le dossier 'submodules'
+bulkloader('./modules', [client, app], true, ['module2.js', 'submodules']);
 ```
+
 ### Gestion des erreurs
 Le module `bulkloader` inclut une gestion des erreurs pour :
 * La lecture du répertoire : Si une erreur se produit lors de la lecture du répertoire, un message d'erreur est affiché.
