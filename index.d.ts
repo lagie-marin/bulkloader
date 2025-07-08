@@ -1,10 +1,11 @@
 /**
- * Auto-require les modules dans un répertoire et leur passe des arguments.
+ * Auto-require modules in a directory and pass them arguments.
  * 
- * @param dirPath - Le chemin vers le répertoire contenant les modules.
- * @param args - Les arguments à passer aux modules lors de leur appel.
- * @param recursive - Si `true`, les sous-répertoires seront également parcourus.
+ * @param dirPath - The path to the directory containing the modules.
+ * @param args - The arguments to pass to the modules when calling them.
+ * @param recursive - If `true`, subdirectories will also be searched.
+ * @param ignore - An array of module names to ignore.
  */
-declare function bulkloader(dirPath: string, args: any[], recursive: boolean): void;
+declare function bulkloader(dirPath: string, args: any[], recursive: boolean, ignore: string[]): void;
 
 export = bulkloader;

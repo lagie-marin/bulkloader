@@ -1,8 +1,8 @@
-# Bulkloader v3.0
+# Bulkloader v3.0.1
 
 Bulkloader est un module qui permet de charger dynamiquement tous les modules d'un répertoire, ainsi que ses sous-répertoires, et de leur passer des arguments spécifiques. Idéal pour initialiser facilement plusieurs modules dans une application Node.js, il simplifie la gestion des dépendances et des configurations partagées.
 
-## Nouveautés de la v3.0
+## Nouveautés de la v3.0.1
 * Fix du chargement dynamique
 * Ajout de la possibilité d'ignorer certains fichiers ou dossiers via un paramètre `ignore`
 
